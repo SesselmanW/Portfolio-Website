@@ -8,73 +8,90 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <title>Portfolio</title>
 </head>
-
+<!-- Nav Section -->
 <body>
     <nav>
-        <p>William Sesselman</p>
-        <ul class="Nav-Header">
-            <li><a href="https://www.google.com"></a>Home</li>
-            <li><a href="https://www.google.com"></a>Who Am I</a></li>
-            <li><a href="https://www.google.com"></a>My Work</li>
-            <li><a href="https://www.google.com"></a>Contact Me</li>
-        <ul>
+      <p>William Sesselman</p>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Who Am I</a></li>
+        <li><a href="#about">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul> 
     </nav>
-
+<!-- Personal Image -->
     <div>
         <img src="./assets/images/Personal Image.jpg" alt="Portrait of Novice Web Developer William Sesselman" class="personal-image"
     </div>
+<!-- America Image -->
+    <div>
+      <img src="./assets/images/AmericanFlagStock.jpeg" alt="American Flag Waving" class="Flag"
+    </div>
+    <hr>
 
     <main>
-    
-    <h1>Guten <span class="Game">Tag</span></h1>
+<!-- Greeting / About Me Section -->
+    <h1  id="about">Guten <span class="Game">Tag</span></h1>
 
-    <p>Hello, weary traveler! My name is Billy Sess and I'm a novice web developer trying to do my darndest. Unfortunately, my novice title is apparent and I don't have much work for you to see.... yet! In the meantime, while this site is under construction, enjoy some stock images that somehow relate to my dog. If you're wondering why you're looking at the only non-consecutive two term president, my dog is named after him. Yup, my dog's name is Grover Cleveland. He loves carrots, tennis balls, and long walks on the beach. But in all seriousness, he'd give me up for any sort of food. Please click the last image, control+F "Gasm", yes, my dog ate that entire sandwich.</p>
-
-    <section class="row justify-center">
+    <p>Hello, weary traveler! My name is Billy Sess and I'm a novice web developer doing my darndest. Unfortunately, my novice title is still apparent so I don't have much work for you to see.... yet! In the meantime, while this site is under construction, enjoy some stock images that somehow relate to my dog. If you're wondering why you're looking at the only non-consecutive two term president, my dog is named after him. Yup, my dog's name is Grover Cleveland. He loves carrots, tennis balls, and long walks on the beach. But in all seriousness, he'd give me up for any sort of food. Please click the last image, control+F "Gasm", yes, my dog ate that entire sandwich.</p>
+<!-- Project Section -->
+    <!-- the section class was 'row justify-center' -->
+    <section class="row justify-center"> 
 
       <div class="card-column">
-        <figure class="card code-card">
-          <a href="https://www.whitehouse.gov/about-the-white-house/presidents/grover-cleveland/"><img src="./assets/images/GroverCleveland.jpeg" alt="Portrait of President Grover Cleveland" class="picture lead" </a>
+        <h2>Grover Cleveland</h2>
+        <figure class="card code-cardlead">
+          <a href="https://www.whitehouse.gov/about-the-white-house/presidents/grover-cleveland/"><img src="./assets/images/GroverCleveland.jpeg" alt="Portrait of President Grover Cleveland" class="picture first"> </a>
         </figure>
       </div>
 
       <div class="card-column">
+        <h2>Carrots</h2>
         <figure class="card code-card">
-            <a href="https://www.crocs.com/p/carrots-x-crocs-classic-all-terrain-clog/207266.html"><img src="./assets/images/CarrotStock.jpeg" alt="Lots of Carrots" class="picture" </a>
+            <a href="https://www.crocs.com/p/carrots-x-crocs-classic-all-terrain-clog/207266.html"><img src="./assets/images/CarrotStock.jpeg" alt="Lots of Carrots" class="picture"> </a>
         </figure>
       </div>
 
       <div class="card-column">
+        <h2>Tennis Balls</h2>
         <figure class="card code-card">
-            <a href="https://www.thetennistribe.com/best-tennis-balls/"><img src="./assets/images/TennisStock.jpeg" alt="Lots of Tennis Balls" class="picture" </a>
+            <a href="https://www.thetennistribe.com/best-tennis-balls/"><img src="./assets/images/TennisStock.jpeg" alt="Lots of Tennis Balls" class="picture"> </a>
         </figure>
       </div>
 
       <div class="card-column">
+        <h2>Beach</h2>
         <figure class="card code-card">
-            <a href="https://montaukhistoricalsociety.org/"><img src="./assets/images/BeachStock.jpeg" alt="Magical Beach View" class="picture" </a>
+            <a href="https://montaukhistoricalsociety.org/"><img src="./assets/images/BeachStock.jpeg" alt="Magical Beach View" class="picture"> </a>
+        </figure>
+      </div>
+      
+      <div class="card-column">
+        <h2>Shopping</h2>
+        <figure class="card code-card">
+            <a href="https://www.petco.com/shop/en/petcostore"><img src="./assets/images/PetcoStock.jpeg" alt="PetCo Store Front" class="picture"> </a>
         </figure>
       </div>
 
       <div class="card-column">
+        <h2>Food</h2>
         <figure class="card code-card">
-            <a href="http://se-portdeli.com/sandwich-menu"><img src="./assets/images/AnythingStock.jpeg" alt="Feast of Different Foods" class="picture" </a>
+            <a href="http://se-portdeli.com/sandwich-menu"><img src="./assets/images/AnythingStock.jpeg" alt="Feast of Different Foods" class="picture"> </a>
         </figure>
       </div>
-    
+  
     </section>
 
-    <h2>Contact Me</h2>
-
-    <article class="Contact-Me">
-        <ul>
-            <li>Email: William.Sesselman@gmail.com</li>
-            <li>Cell: 1-800-I Already Get Enough Spam Calls</li>
-            <li><a href="https://github.com/SesselmanW"></a>Github</li>
-        <ul>
-    </article>
-
-    </main>
+  <hr>
+  </main>
+<!-- Footer -->
+  <footer id="contact" class ="Contact-Me">
+    <h1>Contact Me!</h1>
+    <ul>
+      <li>Email: TheBestUser@gmail.com</li>
+      <li>Cell: 1-800-I Already Get Enough Spam Calls</li>
+    </ul>
+  </footer>
 
 </body>
 

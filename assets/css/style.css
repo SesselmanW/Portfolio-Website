@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #FF6F61 ;
+    background-color: #FF6F61;
 }
 
 nav {
@@ -18,11 +18,10 @@ main h1 span {
 }
 
 main h1 span:hover::after{
-
     content: "You're it!";
     position: absolute;
     padding: 15px;
-    border: 2px whitesmoke dotted;
+    border: 2px white dotted;
     color:white;
     font-size: 60%;
 }
@@ -33,12 +32,12 @@ nav p {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     line-height: 55px;
     padding: 10px 15px;
-    color:whitesmoke
+    color:white;
 }
 
 nav ul {
     float:right;
-    padding: 24px 1px;
+    padding: 24px 1px
 }
 
 nav ul li {
@@ -50,69 +49,147 @@ nav ul li {
     border-bottom: 1px white solid;
     margin: 5px;
     padding: 10px;
-    color: whitesmoke;
+    color: white;
 }
 
 nav ul li a {
     float:right;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
     font-size: 14px;
     text-decoration: none;
-    padding: 10px 40px 10px 15px;
 }
 
-.Nav-Header li :hover {
+nav ul li:hover {
     box-shadow:inset 0px 0px 8px rgb(255, 234, 1), 0 0 15px rgba(255, 234, 1);
     color: rgb(255, 234, 1);
 }
 
 .personal-image {
     position: relative;
-    max-height: 500px;
-    max-width: 170px;
+    max-height: 600px;
+    max-width: 200px;
     border-radius: 50%;
     float: left;
-    padding: 100px 20px;
+    padding: 135px 20px;
     margin-left: -700px;
+}
+
+.Flag {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-size: cover;
+    background-position: center;
+}
+
+.picture:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+    height: 450px;
+    width: 450px;
 
 }
 
 main {
     position:relative;
-    padding:300px;
+    margin-top: 25px;
+    font-size: 24px;
 }
 
 /* how can we ensure the edges match */
 h1 {
     font-size: 64px;
-    margin-left: -280px;
-    color:whitesmoke;
+    color:white;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+
 }
 
 main p {
     font-size: 24px;
-    color:whitesmoke;
+    color:white;
     text-align:center;
     padding: 50px;
-    margin: 15px;
+    margin: 30px;
     word-spacing: 1px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 100px;
+    text-decoration:none;
+    text-align: center;
+    color: white;
+    padding: 10px;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: space-between;
   }
 
 .picture {
-    max-height: 700px;
-    max-width: 700px;
+    height: 400px;
+    width: 400px;
+    transition: 0.5s;
 }
 
-.card {
-
+hr {
+    margin-top: 100px;
 }
+
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+
+@media screen and (min-width: 768px) {
+  
+    .card-column {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  
+    /* select the last child to grow to full width if it has space to grow */
+    .card-column:last-child {
+      flex-grow: 1;
+    }
+  }
+
+@media screen and (min-width: 768px) {
+  
+    .card-column {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  
+    /* select the last child to grow to full width if it has space to grow */
+    .card-column:last-child {
+      flex-grow: 1;
+    }
+  }
+  
+  /* media query for larger screens */
+  @media screen and (min-width: 992px) {
+    header {
+      width: 75%;
+    }
+  
+    .card-column {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+    }
+  }
+
+  
+
+  
   
